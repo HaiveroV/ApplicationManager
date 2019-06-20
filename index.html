@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Application Manager</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header clearfix">
+                <h2 class="text-center" id="heading">
+                    <i class="fa fa-2x fa-skyatlas" id="frstHeadIcon" aria-hidden="true"></i>
+                    <span id="appHeading">Applications</span> Manager
+                    <i class="fa fa-2x fa-skyatlas headIcon" id="scndHeadIcon" aria-hidden="true"></i>
+                </h2>
+            </div>
+            <hr id="myHr">
+        </div>
+    </header>
+    <main id="main">
+        <div class="jumbotron">
+            <h2 class="text-center">Manage Your Applications</h2>
+            <form id="myForm">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label class="groupHeading">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter Name" required minlength="4">
+                        </div>
+                        <div class="form-group">
+                            <label class="groupHeading">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="groupHeading">Age</label>
+                            <input type="number" class="form-control" id="age" placeholder="Enter Age" required min="5" max="100">
+                        </div>
+                        <div class="form-group">
+                            <label class="groupHeading">Phone Number</label>
+                            <input type="number" class="form-control" id="phoneNumber" placeholder="Enter Phone Number"
+                                required minlength="6" maxlength="11">
+                        </div>
+                        <div class="form-group">
+                            <label class="groupHeading">Preferred Way of Communication</label>
+                            <br>
+                            <label class="radio-inline" id="radioLabelEmail">Email
+                                <input type="radio" name="optradio" value="email" class="form-control radio"
+                                    id="byPhone" required>
+                                <span class="checkmark"></span>
+                            </label>
+
+                            <label class="radio-inline" id="radioLabelPhone">Phone
+                                <input type="radio" name="optradio" value="phone" class="form-control radio"
+                                    id="byEmail" required>
+                            </label>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group" id="secondPart">
+                            <label class="groupHeading">English Level</label>
+                            <select class="form-control" id="engLevel" required>
+                                <option>Beginner</option>
+                                <option>Elementary A1/A2</option>
+                                <option>Intermediate B1</option>
+                                <option>Advanced C2</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="groupHeading">Available to Start</label>
+                            <br>
+                            <input type="date" name="startdate" id="startDate" required min="2019-06-10" max="2020-01-01">
+                        </div>
+                        <div class="form-group">
+                            <label class="groupHeading">Technical Skills and Courses</label>
+                            <textarea class="form-control" rows="4" id="skillsAndCourses" required minlength="5" maxlength="50"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label class="groupHeading" id="enLvlLable">Short Personal Presentation</label>
+                            <textarea class="form-control" rows="4" id="persPresent" required minlength="5" maxlength="50"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label class="groupHeading">Do You Want to Study from Home ?</label>
+                            <br>
+                            <input type="checkbox" value="" id="remoteStudy"> Yes
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="submitBtn">Add Application</button>
+                </div>
+
+            </form>
+            <div class="row">
+                <div class="col-md-12">
+                    <table class=" table table-striped" id="appTable">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Age</th>
+                                <th>Phone Number</th>
+                                <th>Communication By</th>
+                                <th>English Level</th>
+                                <th>Start Date</th>
+                                <th>Tech Skills & Courses</th>
+                                <th>Personal Presentation</th>
+                                <th>Remote Study</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="app-list">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2019 Application Manager.</p>
+    </footer>
+
+    <script src=" https://use.fontawesome.com/a1c8bcef0e.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

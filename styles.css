@@ -1,0 +1,250 @@
+main {
+    font-family: 'Raleway' !important;
+}
+
+.row {
+    margin-right: 0px !important
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+.jumbotron {
+    background-image: url('assets/background_img_2.png');
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.jumbotron>h2 {
+    padding-bottom: 10px;
+    color: #F99542;
+}
+
+#appHeading {
+    color: #F99542;
+}
+
+#heading {
+    margin-top: 0px;
+}
+
+.form-group {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.groupHeading {
+    font-size: 16px;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    font-size: bold;
+    font-size: 18px;
+}
+
+.footer>p {
+    margin: 0px !important;
+}
+
+label {
+    color: snow;
+}
+
+
+/* Space out content a bit */
+body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/* Custom page header */
+.header {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.header h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    /* Make the masthead heading the same height as the navigation */
+}
+
+/* Custom page footer */
+.footer {
+    padding-top: 19px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+    .container {
+        max-width: 730px;
+    }
+}
+
+.container-narrow>hr {
+    margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.jumbotron .btn {
+    background-color: #F99542;
+    outline: none;
+    border: none;
+    padding: 14px 24px;
+    margin-bottom: 1rem;
+    font-size: 21px;
+    position: relative;
+    top: -36%;
+    left: 0%;
+}
+
+.jumbotron .btn:hover {
+    background-color: #f2a668;
+}
+
+/* Supporting marketing content */
+.marketing {
+    margin: 40px 0;
+}
+
+.marketing p+h4 {
+    margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+
+    /* Remove the padding we set earlier */
+    .header,
+    .marketing,
+    .footer {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .jumbotron {
+        border-bottom: 0;
+    }
+}
+
+#radioLabelEmail {
+    padding-left: 0px;
+    padding-right: 34px;
+}
+
+#radioLabelPhone {
+    padding-left: 0px;
+    margin-left: 0px;
+    padding-right: 40px;
+}
+
+#byPhone,
+#byEmail {
+    cursor: pointer;
+}
+
+#byPhone:hover,
+#byEmail:hover {
+    background-color: #343963;
+}
+
+#remoteStudy {
+    zoom: 1.7;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+.well {
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+    #secondPart {
+        margin-top: 50px;
+    }
+}
+
+#frstHeadIcon {
+    color: #343963;
+    margin-right: 10px;
+}
+
+#scndHeadIcon {
+    color: #343963;
+    margin-left: 10px;
+}
+
+@media only screen and (max-width: 540px) {
+
+    #frstHeadIcon,
+    #scndHeadIcon {
+        display: none;
+    }
+}
+
+#appTable {
+    color: black;
+    background-color: snow;
+}
+
+#myHr {
+    margin-bottom: 0px;
+    border: 2px solid #F99542;
+}
+
+.header {
+    border: none;
+}
+
+.alert-success {
+    background-color: green;
+}
+
+.alert-danger {
+    background-color: red;
+}
+
+.alert-success,
+.alert-warning,
+.alert-danger {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
